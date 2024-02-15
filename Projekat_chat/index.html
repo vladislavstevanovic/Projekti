@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>It Bootcamp Chat</h1>
+        <h2>Choose a chatroom</h2>
+    </header>
+    <div id="containerSobe">
+        <input type="button" value="#general" id="general" class="button">
+        <input type="button" value="#js" id="js" class="selektovanaSoba">
+        <input type="button" value="#homeworks" id="homeworks" class="button">
+        <input type="button" value="#tests" id="tests" class="button">
+    </div>
+    <section id="chatPolje">
+        <ul id="listaPoruka">
+
+        </ul>
+    </section>
+    <form action="" id="colorPickerForm">
+        <input type="color" id="colorPickerInput" value="#ffffff">
+        <input type="submit" value="Update color" id="colorPickerBtn">
+    </form>
+    <form action="" id="sendMessageForm">
+        <textarea placeholder="Your message" id="sendMessageTekst"></textarea>
+        <input type="submit" value="Send" id="sendMessageBtn">
+    </form>
+    <form action="" id="updateUsernameForm">
+        <input type="text" placeholder="Update username" id="updateUsernameTekst">
+        <input type="submit" value="Update" id="updateUsernameBtn">
+    </form>
+    <div id="notifikacija"></div>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+<script>
+	  const firebaseConfig = {
+        apiKey: "AIzaSyAgRMmawuSkFjC14TSWv7plj1HjSQDwpAQ",
+        authDomain: "itbutkamp-wali1.firebaseapp.com",
+        projectId: "itbutkamp-wali1",
+        storageBucket: "itbutkamp-wali1.appspot.com",
+        messagingSenderId: "114747491029",
+        appId: "1:114747491029:web:ca18980e7ee55aab55d85c"
+  };
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	let db = firebase.firestore();
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
+
+
+<!-- The web-based chat application employs Firebase, a real-time database service,
+ to enable seamless storage and retrieval of chat messages. JavaScript manages dynamic interactions, 
+ including sending messages, updating usernames, and changing background colors, while CSS styles the interface for a visually 
+ appealing and responsive user experience. -->

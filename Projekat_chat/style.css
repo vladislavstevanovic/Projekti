@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#containerSobe {
+    margin: 10px 30px 0 30px ; 
+}
+
+.button {   
+    background-color: blue;
+    color: #fff;
+    width: 24%;
+    height: 50px;
+    font-size: 18px;   
+    border-radius: 15px;
+}
+.button:hover{
+    background-color: rgb(23, 167, 119);
+    color: #fff;
+    cursor: pointer;
+}
+.selektovanaSoba{
+    background-color: red;
+    color: #fff;
+    width: 24%;
+    height: 50px;
+    font-size: 18px;   
+    border-radius: 15px;
+}
+ul {
+    list-style: none;
+}
+
+#chatPolje{
+    min-height: 100px;
+    margin: 20px 15%;
+    height: 60vh;
+    overflow: scroll;
+    overflow-x:hidden
+}
+
+
+.poruke.aktivniUser{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.poruke.ostaliUseri{
+    margin-right: auto;
+
+}
+.poruke {
+    background-color: rgb(41, 108, 233);
+    color: white;
+    margin: 10px 0 10px 0;
+    min-width: 150px;
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.messageContainer {
+    display: flex;
+}
+#sendMessageForm, #updateUsernameForm, #colorPickerForm {
+    display: flex;
+    margin: 20px 15%; 
+}
+#sendMessageTekst, #updateUsernameTekst, #colorPickerInput{
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#sendMessageBtn, #updateUsernameBtn, #colorPickerBtn{
+    width: 30%;
+    height: 60%;
+    padding: 7px 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: blue;
+}
+#notifikacija{
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: block;
+    color:red;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.deleteButton{
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 700px){
+.button{
+    display: block;
+    width: 100%;
+}
+.selektovanaSoba{
+    display: block;
+    width: 100%;
+}
+}

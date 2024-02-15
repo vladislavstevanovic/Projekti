@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="row" id="naslov">Igra memorije</h1>
+    <div class="popup" id="popup">
+        <h3>Bravo, završili ste igru!!!</h3>
+        <button type="button" id="closePopup">Super</button>
+    </div>
+    <div class="row">
+        <section class="col-6 col-t-12 col-m-12">
+            <input type="text" id="unosImena">
+            <input type="button" id="pocniIgru" value="Počni igru">
+            <input type="button" id="resetuj" value="Resetuj Igru"><br>
+            <input type="radio" name="tezina" id="lako" value="1" checked>
+            <label for="lako" class="col-m-5">Lako</label>
+            <input type="radio" name="tezina" id="srednje" value="2">
+            <label for="srednje" class="col-m-5">Srednje</label>
+            <input type="radio" name="tezina" id="tesko" value="3">
+            <label for="tesko" class="col-m-5">Teško</label>
+            <input type="radio" name="tezina" id="ekspert" value="4">
+            <label for="ekspert" class="col-m-5">Ekspert</label>
+        </section>
+        <div class="col-6 col-t-12 col-m-12" id="containerVreme">
+            <p>Vaše vreme</p> <div id="vreme">0</div><br>
+        </div>
+    </div>
+    <div class="row">
+        <div id="containerSlika" class="col-6 col-t-12 col-m-12">
+                
+        </div>
+        <div id="containerTabela" class="col-6 col-t-12 col-m-12">
+            <input type="radio" name="skor" id="skorLako" value="0">
+            <label for="skorLako">Lako</label>
+            <input type="radio" name="skor" id="skorSrednje" value="1">
+            <label for="skorSrednje">Srednje</label>
+            <input type="radio" name="skor" id="skorTesko" value="2">
+            <label for="skorTesko">Teško</label>
+            <input type="radio" name="skor" id="skorEkspert" value="3">
+            <label for="skorEkspert">Ekspert</label>
+
+            <table class="tabela" id="tabelaLako">
+                <tr>
+                    <td>Mesto1</td>
+                    <td>Korisničko ime1</td>
+                    <td>Vreme1</td>
+                </tr>
+            </table>
+            <table class="tabela" id="tabelaSrednje">
+                <tr>
+                    <td>Mesto2</td>
+                    <td>Korisničko ime2</td>
+                    <td>Vreme2</td>
+                </tr>
+            </table>
+            <table class="tabela" id="tabelaTesko">
+                <tr>
+                    <td>Mesto3</td>
+                    <td>Korisničko ime3</td>
+                    <td>Vreme3</td>
+                </tr>
+            </table>
+            <table class="tabela" id="tabelaEkspert">
+                <tr>
+                    <td>Mesto4</td>
+                    <td>Korisničko ime4</td>
+                    <td>Vreme4</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+<!-- Your HTML code defines a memory game with various difficulty levels, player input, a timer, and score tables. 
+The associated CSS styles handle the layout and appearance of the elements, while the JavaScript code controls the game logic, timing, 
+and manages local storage for high scores.
+
+The JavaScript code initializes variables, handles user input, generates and shuffles image pairs, tracks matches, updates the timer,
+ and manages scoring. It also incorporates a popup for congratulating the player upon completing the game. The code efficiently uses event listeners and modular functions for better readability and maintenance.
+
+Overall, the project combines HTML, CSS, and JavaScript to create an interactive and visually appealing memory game. -->
